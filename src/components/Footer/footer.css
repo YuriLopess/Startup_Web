@@ -4,6 +4,8 @@ li {
 
 a {
     text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .nav {
@@ -19,10 +21,17 @@ a {
 .nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    gap: 5rem;
+    justify-content: space-around; 
     list-style: none;
     flex-grow: 1;
+}
+
+.nav-menu li a {
+    transition: 0.5s;
+}
+
+.nav-menu li a:hover {
+    font-size: 1.6rem;
 }
 
 .nav-active {
@@ -48,16 +57,23 @@ a {
     .nav-menu {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: center; 
+        align-items:center;
         position: fixed;
-        top: 7vh;
+        top: 0vh;
         right: 0;
         width: 50%; 
-        height: 93vh; 
+        height: 100vh;
+        gap: 5rem;
         background-color: var(--color-2);
         transform: translateX(100%); 
         transition: transform 0.5s ease-in;
+    }
+
+    .nav-menu li,
+    .nav-menu li a {
+        background-color: var(--color-2);
+        color: var(--color-1);
     }
 
     .nav-menu.nav-active {
@@ -79,6 +95,6 @@ a {
     }
 
     .hamburger-menu {
-        display: none; /
+        display: none;
     }
 }
