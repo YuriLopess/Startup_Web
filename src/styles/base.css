@@ -15,3 +15,24 @@
     --color-1: #F7F7F8;
     --color-2: #1E201E;
 }
+
+.class-top,
+.class-bottom,
+.right-content {
+    display: flex;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid var(--color-2);
+    background-color: var(--color-2);
+    color: var(--color-1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}

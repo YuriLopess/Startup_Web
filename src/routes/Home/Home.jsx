@@ -4,42 +4,42 @@ import './home.css'
 
 function Home() {
     const data = [
-        { id: 1, title: 'Youtube', content: 'Produza conteúdo cativante e conquiste seu público com vídeos de alta qualidade no maior palco digital do mundo.', color: '#F1C2B0'},
+        { id: 1, title: 'Youtube', paragraph: 'Produza conteúdo cativante e conquiste seu público com vídeos de alta qualidade no maior palco digital do mundo.', color: '#F1C2B0'},
 
-        { id: 2, title: 'Tiktok', content: 'Faça sua criatividade brilhar em vídeos curtos e envolventes que vão cativar a comunidade global do TikTok.',
+        { id: 2, title: 'Tiktok', paragraph: 'Faça sua criatividade brilhar em vídeos curtos e envolventes que vão cativar a comunidade global do TikTok.',
         color: '#F9EB98'},
 
-        { id: 3, title: 'Facebook', content: 'Conecte-se com sua audiência de forma autêntica e impactante através de vídeos que se destacam no feed do Facebook.', color: '#C0D9DD'},
+        { id: 3, title: 'Facebook', paragraph: 'Conecte-se com sua audiência de forma autêntica e impactante através de vídeos que se destacam no feed do Facebook.', color: '#C0D9DD'},
         
-        { id: 4, title: 'Instagram', content: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#6975E8'},
+        { id: 4, title: 'Instagram', paragraph: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#6975E8'},
     ];
     
     return (
         <>
-            <section>
-                <div>
+            <section className='class-top'>
+                <div className='left-content'>
                     <h1>Crie seus vídeos <br /> online</h1>
                     <p>Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade.</p>
-                    <button>Começar agora!</button>
+                    <button className='button'>Começar agora!</button>
                 </div>
 
-                <div>
+                <div className='right-content'>
                     <img src="..\src\assets\img\video-mockup.png" alt="video mockup" />
                 </div>
             </section>
 
             <section>
-                <div>
+                <div className='class-bottom'>
                     <div>
                         <h2></h2>
                         <h3></h3>
                         <p></p>
                     </div>
                     {data.map((row) => (
-                        <div>
+                        <div key={row.id} style={{ backgroundColor: row.color, padding: '20px'}}>
                             <h2>{row.id}</h2>
                             <h3>{row.title}</h3>
-                            <p>{row.content}</p>
+                            <p>{row.paragraph}</p>
                         </div>
                     ))}
                 </div>
