@@ -30,13 +30,8 @@ function Home() {
 
             <section>
                 <div className='class-bottom'>
-                    <div>
-                        <h2></h2>
-                        <h3></h3>
-                        <p></p>
-                    </div>
                     {data.map((row) => (
-                        <div key={row.id} style={{ backgroundColor: row.color, padding: '20px'}}>
+                        <div key={row.id} style={{ backgroundColor: row.color}} className='block-data'>
                             <h2>{row.id }</h2>
                             <h3>{row.title}</h3>
                             <p>{row.paragraph}</p>
