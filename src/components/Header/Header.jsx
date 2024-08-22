@@ -4,10 +4,6 @@ import '../../styles/base.css';
 
 import { Link } from 'react-router-dom';
 
-import Home from '../../routes/Home/Home';
-import About from '../../routes/About/About';
-import Contact from '../../routes/Contact/Contact'
-
 function Header(props) {
     const [active, setActive] = useState('nav-menu');
     const [isMenuOpen, setIsMenuOpen] = useState(false);

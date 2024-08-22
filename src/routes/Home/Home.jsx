@@ -37,7 +37,7 @@ function Home() {
                     </div>
                     {data.map((row) => (
                         <div key={row.id} style={{ backgroundColor: row.color, padding: '20px'}}>
-                            <h2>{row.id}</h2>
+                            <h2>{row.id }</h2>
                             <h3>{row.title}</h3>
                             <p>{row.paragraph}</p>
                         </div>
