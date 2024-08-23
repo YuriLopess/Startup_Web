@@ -52,16 +52,6 @@ h1 {
     margin: 0 1rem;
 }
 
-.right-content img {
-    cursor: pointer;
-    height: 380px;
-    transition: transform 0.5s ease; 
-}
-
-.right-content img:hover {
-    transform: translateY(-10px);
-}
-
 .button {
     padding: 12px 25px;
     border-radius: 5px;
@@ -79,6 +69,17 @@ h1 {
 }
 
 @media (max-width: 781px) {
+    .class-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .left-content > * {
+        margin: 20px 0;
+    }
+
     .class-bottom {
         flex-direction: column;
         align-items: center;

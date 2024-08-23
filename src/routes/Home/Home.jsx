@@ -24,7 +24,7 @@ function Home() {
                 </div>
 
                 <div className='right-content'>
-                    <img src="..\src\assets\img\video-mockup.png" alt="video mockup" />
+                    <img src="..\src\assets\img\video-mockup.png" alt="video mockup" id='video-mockup'/>
                 </div>
             </section>
 

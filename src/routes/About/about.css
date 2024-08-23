@@ -1,0 +1,33 @@
+.mobile-screen {
+    cursor: pointer;
+    transition: transform 0.5s ease; 
+    height: 70vh;
+    margin: 0 20px;
+}
+
+.mobile-screen:hover {
+    transform: translateY(-10px);
+}
+
+.block-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.services-content {
+    display: grid;
+    padding: 10px;
+    height: 60vh;
+    width: 45vh;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+
+.services-content:hover {
+    transform: translateY(-10px);
+}
+

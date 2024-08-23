@@ -46,3 +46,10 @@
 .form-button button {
     padding: 10px 40px;
 }
+
+
+@media (max-width: 781px) {
+    .center-content {
+        display: none;
+    }
+}
