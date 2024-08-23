@@ -36,7 +36,7 @@ footer {
 
 .footer-section ul li:hover {
     transform: translateX(-8px);
-    color: rgb(168, 168, 168);
+    color: var(--color-3);
 }
 
 .copyright {

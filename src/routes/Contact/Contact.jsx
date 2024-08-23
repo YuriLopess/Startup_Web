@@ -6,27 +6,38 @@ function Contact() {
     <>
     <section className='class-top'>
       <div className='left-content'>
-        <h1>Dúvidas e suporte, entre em contato:</h1>
-        <div>
-          <p></p>
-          <p></p>
-          <p></p>
+        <h1>Dúvidas e suporte, <br /> entre em contato:</h1>
+        <div id='icons-content'>
+          <p><i class="fa-brands fa-youtube"></i></p>
+          <p><i class="fa-brands fa-linkedin"></i></p>
+          <p><i class="fa-brands fa-facebook"></i></p>
         </div>
       </div>
 
+      <div className='center-content'></div>
+
       <div className='right-content'>
         <form className='form-content'>
-          <label>Nome:</label>
-          <input type="text"/>
+          <div className='form-group'>
+            <label>Nome:</label>
+            <input type="text"/>
+          </div>
+          
+          <div className='form-group'>
+            <label>Email:</label>
+            <input type="text"/>
+          </div>
 
-          <label>Email:</label>
-          <input type="text"/>
+          <div className='form-group'>
+            <label>Mensagem:</label>
+            <input type="text" id='form-message'/>
+          </div>
 
-          <label>Mensagem:</label>
-          <input type="text"/>
-
-          <button className='button'>Enviar</button>
-        </form>        
+          <div className='form-button'>
+            <button className='button'>Enviar</button>
+          </div>
+          
+        </form>
       </div>
     </section>
 
