@@ -20,10 +20,10 @@ function About() {
         <section>
             <div className='block-services'>
                 <div className='services-content'>
-                    <h2>Individual</h2>
-                    <p>teste</p>
+                    <h3>Individual</h3>
+                    <label>1 Usuário</label>
                     <select>
-                        <option value="">Padrão </option>
+                        <option value="">10 vídeos</option>
                         <option value="teste1">teste1</option>
                         <option value="teste2">teste2</option>
                         <option value="teste3">teste3</option>
@@ -32,10 +32,18 @@ function About() {
                 </div>
 
                 <div className='services-content'>
-                    <h2>Profissional - Times</h2>
-                    <p>teste</p>
+                    <h3>Profissional - Times</h3>
+                    <label>1 - 10 Usuários</label>
                     <select>
-                        <option value="">Padrão </option>
+                        <option value="">Vídeos Ilimitados</option>
+                        <option value="teste1">teste1</option>
+                        <option value="teste2">teste2</option>
+                        <option value="teste3">teste3</option>
+                    </select>
+
+                    <label>+10 Usuários</label>
+                    <select>
+                        <option value="">Vídeos Ilimitados</option>
                         <option value="teste1">teste1</option>
                         <option value="teste2">teste2</option>
                         <option value="teste3">teste3</option>
@@ -44,7 +52,7 @@ function About() {
                 </div>
 
                 <div className='services-content'>
-                    <h2>Corporativo</h2>
+                    <h3>Corporativo</h3>
                     <img src="..\src\assets\img\undraw_img.png" alt="undraw image" />
                     <button>Entre em contato</button>
                 </div>

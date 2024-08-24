@@ -17,7 +17,8 @@
 }
 
 .services-content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     height: 60vh;
     width: 45vh;
@@ -31,3 +32,25 @@
     transform: translateY(-10px);
 }
 
+.services-content select {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.services-content label {
+    color: var(--color-4);
+}
+
+.services-content button{
+    background-color: white;
+    border: 2px solid var(--color-2);
+    height: 30px;
+}
+
+@media (max-width: 781px) {
+    .block-services {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
