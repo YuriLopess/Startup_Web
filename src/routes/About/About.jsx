@@ -1,7 +1,13 @@
-import React from 'react'
-import './about.css'
+import React, { useState } from 'react';
+import './about.css';
 
 function About() {
+    const [activeService, setActiveService] = useState(null);
+
+    const handleClick = (service) => {
+        setActiveService(service);
+    };
+
     return (
         <>
         <section className="class-top">
@@ -19,48 +25,62 @@ function About() {
 
         <section>
             <div className='block-services'>
-                <div className='services-content'>
-                    <h3>Individual</h3>
-                    <label>1 Usuário</label>
-                    <select>
-                        <option value="">10 vídeos</option>
-                        <option value="teste1">teste1</option>
-                        <option value="teste2">teste2</option>
-                        <option value="teste3">teste3</option>
-                    </select>
-                    <button>Cadastrar</button>
-                </div>
+                {['Individual', 'Profissional - Times', 'Corporativo'].map((service, index) => (
+                    <div 
+                        key={index} 
+                        className={`services-content ${activeService === service ? 'active' : ''}`} 
+                        onClick={() => handleClick(service)}
+                    >
+                        <div className='services-header'>
+                            <h3>{service}</h3>
+                            <hr />
+                        </div>
+                        
+                        {service === 'Individual' && (
+                            <>
+                                <label>1 Usuário</label>
+                                <select>
+                                    <option value="">10 vídeos</option>
+                                    <option value="teste1">teste1</option>
+                                    <option value="teste2">teste2</option>
+                                    <option value="teste3">teste3</option>
+                                </select>
+                            </>
+                        )}
 
-                <div className='services-content'>
-                    <h3>Profissional - Times</h3>
-                    <label>1 - 10 Usuários</label>
-                    <select>
-                        <option value="">Vídeos Ilimitados</option>
-                        <option value="teste1">teste1</option>
-                        <option value="teste2">teste2</option>
-                        <option value="teste3">teste3</option>
-                    </select>
+                        {service === 'Profissional - Times' && (
+                            <>
+                                <label>1 - 10 Usuários</label>
+                                <select>
+                                    <option value="">Vídeos Ilimitados</option>
+                                    <option value="teste1">teste1</option>
+                                    <option value="teste2">teste2</option>
+                                    <option value="teste3">teste3</option>
+                                </select>
 
-                    <label>+10 Usuários</label>
-                    <select>
-                        <option value="">Vídeos Ilimitados</option>
-                        <option value="teste1">teste1</option>
-                        <option value="teste2">teste2</option>
-                        <option value="teste3">teste3</option>
-                    </select>
-                    <button>Cadastrar</button>
-                </div>
+                                <label>+10 Usuários</label>
+                                <select>
+                                    <option value="">Vídeos Ilimitados</option>
+                                    <option value="teste1">teste1</option>
+                                    <option value="teste2">teste2</option>
+                                    <option value="teste3">teste3</option>
+                                </select>
+                            </>
+                        )}
 
-                <div className='services-content'>
-                    <h3>Corporativo</h3>
-                    <img src="..\src\assets\img\undraw_img.png" alt="undraw image" />
-                    <button>Entre em contato</button>
-                </div>
+                        {service === 'Corporativo' && (
+                            <>
+                                <img src="..\src\assets\img\undraw_img.png" alt="undraw image" />
+                            </>
+                        )}
+                        
+                        <button>{service === 'Corporativo' ? 'Entre em contato' : 'Cadastrar'}</button>
+                    </div>
+                ))}
             </div> 
         </section>
         </>
     )
-    
 }
 
 export default About;

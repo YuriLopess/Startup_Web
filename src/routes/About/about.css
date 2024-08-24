@@ -1,3 +1,9 @@
+:root {
+    --color-services-1: #C7253E;
+    --color-services-2: #7695FF;
+    --color-services-3: #FF8343;
+}
+
 .mobile-screen {
     cursor: pointer;
     transition: transform 0.5s ease; 
@@ -19,17 +25,26 @@
 .services-content {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     height: 60vh;
     width: 45vh;
     border-radius: 5px;
     background-color: white;
-    transition: transform 0.5s ease; 
+    transition: transform 0.5s ease;
     cursor: pointer;
+    border: 3px solid transparent;
 }
 
 .services-content:hover {
     transform: translateY(-10px);
+}
+
+.services-header {
+    text-align: center;
+}
+
+.services-content h3 {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .services-content select {
@@ -41,10 +56,35 @@
     color: var(--color-4);
 }
 
-.services-content button{
+.services-content button {
     background-color: white;
-    border: 2px solid var(--color-2);
+    border: 3px solid var(--color-2);
+    border-radius: 5px;
     height: 30px;
+    margin-top: auto;
+    cursor: pointer;
+    color: var(--color-2);
+}
+
+.services-content.active:nth-child(1) .services-header,
+.services-content.active:nth-child(1) button {
+    background-color: var(--color-services-1);
+    color: white;
+    border: 3px solid var(--color-services-1);
+}
+
+.services-content.active:nth-child(2) .services-header,
+.services-content.active:nth-child(2) button {
+    background-color: var(--color-services-2);
+    color: white;
+    border: 3px solid var(--color-services-2);
+}
+
+.services-content.active:nth-child(3) .services-header,
+.services-content.active:nth-child(3) button {
+    background-color: var(--color-services-3);
+    color: white;
+    border: 3px solid var(--color-services-3);
 }
 
 @media (max-width: 781px) {
