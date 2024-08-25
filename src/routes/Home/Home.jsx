@@ -18,7 +18,7 @@ function Home() {
         <>
             <section className='class-top'>
                 <div className='left-content'>
-                    <h1>Crie seus vídeos <br /> online</h1>
+                    <h1>Crie seus vídeos online</h1>
                     <p>Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade.</p>
                     <button className='button'>Começar agora!</button>
                 </div>

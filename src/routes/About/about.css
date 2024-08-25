@@ -1,7 +1,7 @@
 :root {
     --color-services-1: #C7253E;
-    --color-services-2: #7695FF;
-    --color-services-3: #FF8343;
+    --color-services-2: #FF8343;
+    --color-services-3: #7695FF;
 }
 
 .mobile-screen {
@@ -31,7 +31,6 @@
     background-color: white;
     transition: transform 0.5s ease;
     cursor: pointer;
-    border: 3px solid transparent;
 }
 
 .services-content:hover {
@@ -43,48 +42,73 @@
 }
 
 .services-content h3 {
-    margin-bottom: 20px;
+    margin: 10px 0;
     text-align: center;
 }
 
 .services-content select {
+    width: 90%;
     height: 30px;
     border-radius: 5px;
+    margin: 0 auto;
+    display: block;
 }
 
 .services-content label {
     color: var(--color-4);
+    margin: 20px 0 0 20px;
 }
 
 .services-content button {
     background-color: white;
     border: 3px solid var(--color-2);
     border-radius: 5px;
-    height: 30px;
+    height: 40px;
     margin-top: auto;
     cursor: pointer;
     color: var(--color-2);
+    font-weight: 600;
 }
 
 .services-content.active:nth-child(1) .services-header,
 .services-content.active:nth-child(1) button {
     background-color: var(--color-services-1);
+    border-radius: 5px;
     color: white;
-    border: 3px solid var(--color-services-1);
 }
 
 .services-content.active:nth-child(2) .services-header,
 .services-content.active:nth-child(2) button {
     background-color: var(--color-services-2);
+    border-radius: 5px;
     color: white;
-    border: 3px solid var(--color-services-2);
 }
 
 .services-content.active:nth-child(3) .services-header,
 .services-content.active:nth-child(3) button {
     background-color: var(--color-services-3);
+    border-radius: 5px;
     color: white;
-    border: 3px solid var(--color-services-3);
+}
+
+.services-content.active hr {
+    background-color: white;
+}
+
+.services-content.active button {
+    color: white;
+    border: solid 3px white;
+}
+
+#undraw-image {
+    height: 230px;
+    width: 240px;
+    margin: auto auto 0 auto;
+}
+
+.services-content select option:hover {
+    background-color: var(--color-services-2);
+    color: #000000; 
 }
 
 @media (max-width: 781px) {
@@ -93,4 +117,8 @@
         flex-direction: column;
         gap: 40px;
     }
+
+    .mobile-screen {
+        display: none;
+    } 
 }

@@ -30,6 +30,12 @@ h1 {
     font-weight: 600;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--color-2);
+}
+
 .class-top,
 .class-bottom,
 .right-content {
@@ -50,7 +56,7 @@ h1 {
 }
 
 .right-content {
-    margin: 0 1rem;
+    margin: 0 1rem 0 5rem;
 }
 
 .button {
@@ -70,6 +76,14 @@ h1 {
 }
 
 @media (max-width: 781px) {
+    section {
+        margin: 3rem 2.5rem;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
     .class-top {
         display: flex;
         flex-direction: column;
@@ -79,6 +93,10 @@ h1 {
 
     .left-content > * {
         margin: 20px 0;
+    }
+
+    .right-content {
+        margin: 0 1rem;
     }
 
     .class-bottom {

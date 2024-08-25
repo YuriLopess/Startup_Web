@@ -22,7 +22,22 @@
 
 #icons-content i:hover {
     transform: translateX(-8px);
-    color: var(--color-3);
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+.fa-instagram {
+    border-radius: 30px;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #F58529, #E4405F, #4B59F4);
+}
+
+.fa-facebook:hover {
+    color: #1877F2;
 }
 
 .form-group {
@@ -33,6 +48,7 @@
     width: 90vh;
     height: 40px;
     margin: 10px 0;
+    border: 3px solid var(--color-2);
 }
 
 #form-message {
@@ -52,4 +68,19 @@
     .center-content {
         display: none;
     }
+
+    #icons-content {
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .form-group input {
+        width: 45vh;
+        height: 40px;
+    }
+    
+    #form-message {
+        height: 70px;
+    }
+    
 }

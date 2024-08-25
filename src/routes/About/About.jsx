@@ -41,9 +41,9 @@ function About() {
                                 <label>1 Usuário</label>
                                 <select>
                                     <option value="">10 vídeos</option>
-                                    <option value="teste1">teste1</option>
-                                    <option value="teste2">teste2</option>
-                                    <option value="teste3">teste3</option>
+                                    <option value="basic">Básico</option>
+                                    <option value="standard">Padrão</option>
+                                    <option value="premium">Premium</option>
                                 </select>
                             </>
                         )}
@@ -53,24 +53,24 @@ function About() {
                                 <label>1 - 10 Usuários</label>
                                 <select>
                                     <option value="">Vídeos Ilimitados</option>
-                                    <option value="teste1">teste1</option>
-                                    <option value="teste2">teste2</option>
-                                    <option value="teste3">teste3</option>
+                                    <option value="basic">Básico</option>
+                                    <option value="standard">Padrão</option>
+                                    <option value="premium">Premium</option>
                                 </select>
 
                                 <label>+10 Usuários</label>
                                 <select>
                                     <option value="">Vídeos Ilimitados</option>
-                                    <option value="teste1">teste1</option>
-                                    <option value="teste2">teste2</option>
-                                    <option value="teste3">teste3</option>
+                                    <option value="basic">Básico</option>
+                                    <option value="standard">Padrão</option>
+                                    <option value="premium">Premium</option>
                                 </select>
                             </>
                         )}
 
                         {service === 'Corporativo' && (
                             <>
-                                <img src="..\src\assets\img\undraw_img.png" alt="undraw image" />
+                                <img src="..\src\assets\img\undraw_img.png" alt="undraw image" id='undraw-image'/>
                             </>
                         )}
                         
