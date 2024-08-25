@@ -30,6 +30,14 @@ To install the project, you can download it as a .zip file or clone it directly 
    ```sh
    git clone https://github.com/YuriLopess/Startup_Web.git
 
+<h2>Participants:</h2>
+
+* Yuri Lopes - RM555522
+* Pedro Sampaio - RM555613
+* Luca Monteiro - RM556906
+* Felipe Alamino - RM556906
+* Davi Vieira - RM556789
+
 <h2>Contact:</h2>
 
 **[costalopesyuri@gmail.com](mailto:costalopesyuri@gmail.com)**
