@@ -4,14 +4,14 @@ import './home.css'
 
 function Home() {
     const data = [
-        { id: 1, title: 'Youtube', paragraph: 'Produza conteúdo cativante e conquiste seu público com vídeos de alta qualidade no maior palco digital do mundo.', color: '#F1C2B0'},
+        { id: 1, title: 'Youtube', paragraph: 'Produza conteúdo cativante e conquiste seu público com vídeos de alta qualidade no maior palco digital do mundo.', color: '#7fa4a4'},
 
         { id: 2, title: 'Tiktok', paragraph: 'Faça sua criatividade brilhar em vídeos curtos e envolventes que vão cativar a comunidade global do TikTok.',
-        color: '#F9EB98'},
+        color: '#507b88'},
 
-        { id: 3, title: 'Facebook', paragraph: 'Conecte-se com sua audiência de forma autêntica e impactante através de vídeos que se destacam no feed do Facebook.', color: '#C0D9DD'},
+        { id: 3, title: 'Facebook', paragraph: 'Conecte-se com sua audiência de forma autêntica e impactante através de vídeos que se destacam no feed do Facebook.', color: '#367aa2'},
         
-        { id: 4, title: 'Instagram', paragraph: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#6975E8'},
+        { id: 4, title: 'Instagram', paragraph: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#1a3c5c'},
     ];
     
     return (

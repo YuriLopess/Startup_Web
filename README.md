@@ -30,13 +30,30 @@ To install the project, you can download it as a .zip file or clone it directly 
    ```sh
    git clone https://github.com/YuriLopess/Startup_Web.git
 
+<h2>Run the Project</h2>
+
+1. After downloading or cloning the repository, navigate to the project 
+
+   ```sh
+   cd Startup_Web
+
+2. Install the necessary dependencies using npm:
+
+   ```sh
+   npm install
+
+3. Start the development server:
+
+   ```sh
+   npm run dev
+
 <h2>Participants:</h2>
 
 * Yuri Lopes - RM555522
 * Pedro Sampaio - RM555613
 * Luca Monteiro - RM556906
-* Felipe Alamino - RM556906
-* Davi Vieira - RM556789
+* Felipe Alamino - RM555819
+* Davi Vieira - RM556798
 
 <h2>Contact:</h2>
 

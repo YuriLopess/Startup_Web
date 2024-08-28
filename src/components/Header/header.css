@@ -28,11 +28,11 @@ a {
 }
 
 .nav-menu li a {
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .nav-menu li a:hover {
-    font-size: 1.6rem;
+    text-decoration: 2px underline;  
 }
 
 .nav-active {

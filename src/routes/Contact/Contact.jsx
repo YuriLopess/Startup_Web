@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import './contact.css'
+import Form from '../../components/Form/Form'
 
 function Contact() {
   return (
@@ -17,27 +18,7 @@ function Contact() {
       <div className='center-content'></div>
 
       <div className='right-content'>
-        <form className='form-content'>
-          <div className='form-group'>
-            <label>Nome:</label>
-            <input type="text"/>
-          </div>
-          
-          <div className='form-group'>
-            <label>Email:</label>
-            <input type="text"/>
-          </div>
-
-          <div className='form-group'>
-            <label>Mensagem:</label>
-            <input type="text" id='form-message'/>
-          </div>
-
-          <div className='form-button'>
-            <button className='button'>Enviar</button>
-          </div>
-          
-        </form>
+        <Form/>
       </div>
     </section>
 
