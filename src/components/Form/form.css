@@ -9,6 +9,10 @@
     border: 3px solid var(--color-2);
 }
 
+.form-group textarea {
+    border: 3px solid var(--color-2);
+}
+
 #form-message {
     height: 80px;
 }

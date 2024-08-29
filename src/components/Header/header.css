@@ -28,11 +28,18 @@ a {
 }
 
 .nav-menu li a {
-    transition: 1s;
+    transition: 0.4s;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid transparent;
 }
 
 .nav-menu li a:hover {
-    text-decoration: 2px underline;  
+    border: 3px solid var(--color-2);
+}
+
+.nav-menu li a:active {
+    box-shadow: 0 0 5px 2.5px rgba(84, 165, 165, 0.7); 
 }
 
 .nav-active {

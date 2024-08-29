@@ -70,7 +70,21 @@ function About() {
 
                         {service === 'Corporativo' && (
                             <>
-                                <img src="..\src\assets\img\undraw_img.png" alt="undraw image" id='undraw-image'/>
+                                <label>10 - 50 Usuários</label>
+                                <select>
+                                    <option value="">Vídeos Ilimitados</option>
+                                    <option value="basic">Básico</option>
+                                    <option value="standard">Padrão</option>
+                                    <option value="premium">Premium</option>
+                                </select>
+
+                                <label>+50 Usuários</label>
+                                <select>
+                                    <option value="">Vídeos Ilimitados</option>
+                                    <option value="basic">Básico</option>
+                                    <option value="standard">Padrão</option>
+                                    <option value="premium">Premium</option>
+                                </select>
                             </>
                         )}
                         

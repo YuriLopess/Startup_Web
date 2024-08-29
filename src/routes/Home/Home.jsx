@@ -11,7 +11,7 @@ function Home() {
 
         { id: 3, title: 'Facebook', paragraph: 'Conecte-se com sua audiência de forma autêntica e impactante através de vídeos que se destacam no feed do Facebook.', color: '#367aa2'},
         
-        { id: 4, title: 'Instagram', paragraph: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#1a3c5c'},
+        { id: 4, title: 'Instagram', paragraph: 'Compartilhe suas histórias de maneira única e conquiste milhões de likes no Instagram utilizando Stories e Reels.', color: '#4b8a8a'},
     ];
     
     return (

@@ -75,6 +75,11 @@ hr {
     color: var(--color-2);
 }
 
+.button:active {
+    box-shadow: 0 0 10px 5px rgba(84, 165, 165, 0.7); 
+}
+
+
 @media (max-width: 781px) {
     section {
         margin: 3rem 2.5rem;
