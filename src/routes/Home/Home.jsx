@@ -1,6 +1,7 @@
 import React from 'react';
-import '../../styles/base.css';
+import '../../styles/styles.css';
 import './home.css'
+import Platforms from '../../components/Platforms/Platforms';
 
 function Home() {
     const data = [
@@ -30,13 +31,7 @@ function Home() {
 
             <section>
                 <div className='class-bottom'>
-                    {data.map((row) => (
-                        <div key={row.id} style={{ backgroundColor: row.color}} className='block-data'>
-                            <h2>{row.id }</h2>
-                            <h3>{row.title}</h3>
-                            <p>{row.paragraph}</p>
-                        </div>
-                    ))}
+                    <Platforms data={data} />
                 </div>
             </section>
         </>
