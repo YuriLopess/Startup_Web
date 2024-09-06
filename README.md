@@ -6,6 +6,10 @@
 
 This is my first project in React: a website that simulates a startup specializing in video creation and editing services. It's a simple project developed as part of an academic proposal at FIAP.
 
+<h2>Deploy:</h2>
+
+* Vercel hosted website link: [Here!](https://startup-web-five.vercel.app/)
+
 <h2>Technologies Used:</h2>
 
 * **React:** JavaScript library for building user interfaces, enabling the creation of reusable components and dynamic UIs with efficient rendering
