@@ -10,6 +10,8 @@ This is my first project in React: a website that simulates a startup specializi
 
 * **React:** JavaScript library for building user interfaces, enabling the creation of reusable components and dynamic UIs with efficient rendering
 
+* **EmailJS:** Service for sending emails directly from your web app, allowing integration with contact forms and other email-related features without needing a backend.
+
 <h2>Installation:</h2>
 
 To install the project, you can download it as a .zip file or clone it directly from GitHub.

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './about.css';
+import mobileScreen1 from '../../assets/img/mobile-screen-step1.png';
+import mobileScreen2 from '../../assets/img/mobile-screen-step2.png';
 
 function About() {
     const [activeService, setActiveService] = useState(null);
@@ -18,8 +20,8 @@ function About() {
             </div>
 
             <div className='right-content'>
-                <img src="..\src\assets\img\mobile-screen-step1.png" alt="mobile screen 1" className='mobile-screen'/>
-                <img src="..\src\assets\img\mobile-screen-step2.png" alt="mobile screen 2" className='mobile-screen'/>
+                <img src={mobileScreen1} alt="mobile screen 1" className='mobile-screen' />
+                <img src={mobileScreen2} alt="mobile screen 2" className='mobile-screen' />
             </div>
         </section>
 

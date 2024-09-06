@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/styles.css';
 import './home.css'
 import Platforms from '../../components/Platforms/Platforms';
+import videoMockup from '../../assets/img/video-mockup.png';
 
 function Home() {
     const data = [
@@ -25,7 +26,7 @@ function Home() {
                 </div>
 
                 <div className='right-content'>
-                    <img src="..\src\assets\img\video-mockup.png" alt="video mockup" id='video-mockup'/>
+                    <img src={videoMockup} alt="video mockup" id='video-mockup'/>
                 </div>
             </section>
 
