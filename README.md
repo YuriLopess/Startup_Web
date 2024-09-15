@@ -53,14 +53,6 @@ To install the project, you can download it as a .zip file or clone it directly 
    ```sh
    npm run dev
 
-<h2>Participants:</h2>
-
-* Yuri Lopes - RM555522
-* Pedro Sampaio - RM555613
-* Luca Monteiro - RM556906
-* Felipe Alamino - RM555819
-* Davi Vieira - RM556798
-
 <h2>Contact:</h2>
 
 **[costalopesyuri@gmail.com](mailto:costalopesyuri@gmail.com)**
